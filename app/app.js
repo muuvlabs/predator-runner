@@ -11,7 +11,7 @@ const runner = require('./models/runner'),
     errorHandler = require('./handler/errorHandler'),
     { version: PREDATOR_RUNNER_VERSION } = require('../package.json');
 
-const RUNNER_TIMEOUT_GRACE_MS = 60000;
+const RUNNER_TIMEOUT_GRACE_MS = 900000;
 
 const getContainerId = () => {
     let containerId = uuid();
